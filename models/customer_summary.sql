@@ -6,7 +6,7 @@ with customers as (
 		last_name
 
 	from `dbt-tutorial.jaffle_shop.customers`
-
+    where id is not null
 ),
 
 orders as (
@@ -18,7 +18,7 @@ orders as (
 		status
 
 	from `dbt-tutorial.jaffle_shop.orders`
-
+    where id is not null
 ),
 
 customer_orders as (
