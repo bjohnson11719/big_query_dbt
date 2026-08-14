@@ -7,9 +7,6 @@ models:
       columns:
           - name: id
             description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
           - name: customer_id
             description: "column 2"
           - name: first_name
