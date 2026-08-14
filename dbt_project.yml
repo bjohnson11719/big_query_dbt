@@ -36,8 +36,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  big_query_dbt:
-    +materialized: table
+  +materialized: table
     # Applies to all files under models/example/
     #example:
       #+materialized: table
