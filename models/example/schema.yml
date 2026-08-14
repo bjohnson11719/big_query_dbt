@@ -2,20 +2,23 @@
 version: 2
 
 models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
+    - name: customer_summary
+      description: "A dbt model that summarizes customer data"
       columns:
           - name: id
             description: "The primary key for this table"
             tests:
                 - unique
                 - not_null
-
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+          - name: customer_id
+            description: "column 2"
+          - name: first_name
+            description: "column 3"
+          - name: last_name
+            description: "column 4"
+          - name: first_order_date
+            description: "column 5"
+          - name: most_recent_order_date
+            description: "column 6"
+          - name: number_of_orders
+            description: "column 7"
