@@ -35,4 +35,5 @@ models:
             description: "order status"
             data_tests:
               - accepted_values:
-                  values: ['completed', 'placed', 'return_pending', 'returned', 'shipped']
+                  arguments:
+                      values: ['completed', 'placed', 'return_pending', 'returned', 'shipped']
